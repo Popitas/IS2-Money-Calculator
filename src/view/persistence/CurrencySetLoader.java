@@ -1,4 +1,4 @@
-package view;
+package view.persistence;
 
 public class CurrencySetLoader {
 
