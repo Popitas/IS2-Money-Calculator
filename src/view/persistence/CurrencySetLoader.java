@@ -1,22 +1,18 @@
 package view.persistence;
 
-import java.util.TreeSet;
 import model.Currency;
+import model.CurrencySet;
 
 public class CurrencySetLoader {
 
-    public void load() {
-        TreeSet<Currency> currencies = new TreeSet<>();
-        
-        fill(currencies);
+    CurrencySet currencies = new CurrencySet();
+
+    public void loadCurrencies() {
+        currencies.addCurrency(new Currency("USD", "Dólar estadounidense"));
+        currencies.addCurrency(new Currency("EUR", "Euro"));
+        currencies.addCurrency(new Currency("GBP", "Libra esterlina"));
+        currencies.addCurrency(new Currency("INR", "Rupia india"));
+        currencies.addCurrency(new Currency("AUD", "Dólar australiano"));
     }
-    
-    public TreeSet<Currency> fill(TreeSet<Currency> currencies) {
-        for (int i = 0; i < 100; i++) {
-            //currencies.add(i);
-            
-        }
-        return currencies;
-    }
-    
+
 }

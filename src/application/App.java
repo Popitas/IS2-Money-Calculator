@@ -10,9 +10,10 @@ public class App {
         ExchangeCommand exchangeController = new ExchangeCommand();
         CurrencySetLoader currencyLoader = new CurrencySetLoader();
         
+        currencyLoader.loadCurrencies();
+        
         while(true) {
             exchangeController.execute();
-            currencyLoader.load();
         }
     }
     
