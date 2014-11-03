@@ -1,13 +1,15 @@
 package model;
 
 public class Currency {
-    
+
     private final String code;
     private final String name;
+    private final Character symbol;
 
-    public Currency(String code, String name) {
+    public Currency(String code, String name, Character symbol) {
         this.code = code;
         this.name = name;
+        this.symbol = symbol;
     }
 
     public String getCode() {
@@ -17,5 +19,9 @@ public class Currency {
     public String getName() {
         return name;
     }
-    
+
+    public Character getSymbol() {
+        return symbol;
+    }
+
 }
