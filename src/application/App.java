@@ -7,7 +7,7 @@ public class App {
 
     public static void main(String[] args) {
 
-        CurrencySetLoader currencyLoader = new CurrencySetLoader();
+        //CurrencySetLoader currencyLoader = new CurrencySetLoader();
         ExchangeCommand exchangeController = new ExchangeCommand();
 
         while (true) {

@@ -4,9 +4,9 @@ public class Currency {
 
     private final String code;
     private final String name;
-    private final Character symbol;
+    private final String symbol;
 
-    public Currency(String code, String name, Character symbol) {
+    public Currency(String code, String name, String symbol) {
         this.code = code;
         this.name = name;
         this.symbol = symbol;
@@ -20,7 +20,7 @@ public class Currency {
         return name;
     }
 
-    public Character getSymbol() {
+    public String getSymbol() {
         return symbol;
     }
 
