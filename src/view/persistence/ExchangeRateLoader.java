@@ -1,5 +1,9 @@
 package view.persistence;
 
-public class ExchangeRateLoader {
+import model.ExchangeRate;
 
+public interface ExchangeRateLoader {
+
+    public ExchangeRate load();
+    
 }
