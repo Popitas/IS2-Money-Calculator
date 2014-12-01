@@ -16,7 +16,6 @@ public class DBCurrencySetLoader implements CurrencySetLoader {
         this.connection = connection;
     }
 
-    @Override
     public Currency[] load() {
         try {
             return processQuery(connection.createStatement().executeQuery("SELECT * FROM CURRENCIES"));

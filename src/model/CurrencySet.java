@@ -11,8 +11,11 @@ public class CurrencySet {
         currencies = new TreeMap<>();
     }
     
-    public void addCurrency(Currency currency) {
+    public void add(Currency currency) {
         currencies.put(currency.getCode(), currency);
     }
     
+    public Currency[] getCurrencies() {
+        return null;
+    }
 }

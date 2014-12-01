@@ -24,6 +24,7 @@ public class DBExchangeRateLoader implements ExchangeRateLoader {
         } catch (SQLException ex) {
             Logger.getLogger(DBExchangeRateLoader.class.getName()).log(Level.SEVERE, null, ex);
         }
+        return null;
     }
 
     private ExchangeRate processQuery(ResultSet executeQuery) {
