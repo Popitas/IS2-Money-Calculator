@@ -17,5 +17,5 @@ public class Exchange {
     public Currency getCurrency() {
         return currency;
     }
-        
+    
 }

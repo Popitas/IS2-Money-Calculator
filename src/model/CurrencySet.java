@@ -1,21 +1,25 @@
 package model;
 
-import java.util.SortedMap;
-import java.util.TreeMap;
+import java.util.ArrayList;
+import java.util.List;
 
 public class CurrencySet {
-    
-    private static SortedMap<String, Currency> currencies;
 
-    public CurrencySet() {
-        currencies = new TreeMap<>();
+    private final List<Currency> list = new ArrayList<>();
+
+    public boolean add(Currency currency) {
+        return list.add(currency);
+    }
+
+    public Currency get(int index) {
+        return list.get(index);
     }
     
-    public void add(Currency currency) {
-        currencies.put(currency.getCode(), currency);
+    public int size() {
+        return list.size();
     }
-    
-    public Currency[] getCurrencies() {
-        return null;
+
+    public Currency[] toArray() {
+        return list.toArray(new Currency[list.size()]);
     }
 }
