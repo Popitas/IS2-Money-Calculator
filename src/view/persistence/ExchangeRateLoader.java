@@ -6,16 +6,6 @@ import model.ExchangeRateSet;
 
 public class ExchangeRateLoader {
 
-    public ExchangeRateSet loader(CurrencySet c) {
-        ExchangeRateSet set = new ExchangeRateSet();
-        set.add(new ExchangeRate(c.get(0), c.get(0), 1));
-        for (int i = 1; i < c.size(); i++) {
-            set.add(new ExchangeRate(c.get(0), c.get(i), aleatorio(0, 2)));
-        }
-
-        return set;
-    }
-
     public ExchangeRateSet load(CurrencySet c) {
         ExchangeRateSet set = new ExchangeRateSet();
         for (int i = 0; i < c.size(); i++) {
